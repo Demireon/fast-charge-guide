@@ -19,7 +19,7 @@ class Homepage extends React.Component {
                                     for fast charging out of the box</h2>
                             </header>
                             <p>If you have an Iphone 8 or later, your phone is capable of an 18W power draw speed to charge it's battery - 
-                            And the basic charger that came out of the box only maxes out delivery at 5W.
+                            And the basic charger that came out of the box only maxes out delivery at a 5W speed.
                             </p>
                             <p><strong>Thats a huge difference.</strong></p>
                         </div>

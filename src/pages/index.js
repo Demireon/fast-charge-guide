@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "Iphone Fast Charge Guide";
 
         return (
             <Layout>

@@ -3,11 +3,6 @@ import Helmet from "react-helmet";
 
 import Layout from '../components/layout';
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-
 class Homepage extends React.Component {
     render() {
         const siteTitle = "Gatsby Starter - Photon";
@@ -51,13 +46,13 @@ class Homepage extends React.Component {
                         </div>
                         <div className="col-6" align="center">
                             <header className="major">
-                                <h2 bold>What do you need to fast charge your phone? Two things!</h2>
+                                <h2>What do you need to fast charge your phone? Two things!</h2>
                             </header>
                             <header>
-                                <i class="icon major fa-plug"><h2>a USB-C to Lightning cable</h2></i>
+                                <i className="icon major fa-plug"><h2>a USB-C to Lightning cable</h2></i>
                             </header>
                             <header>
-                            <i class="icon major fa-square"><h2>and a suitabe Power adapter</h2></i>
+                                <i className="icon major fa-square"><h2>and a suitabe Power adapter</h2></i>
                             </header>
                         </div>
                     </div>
@@ -78,21 +73,21 @@ class Homepage extends React.Component {
                             <span className="icon style2 major fa-apple fa-2x"></span>
                             <h3>Apple Lightning to USB-C Cable</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B07CMN7DCX" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2XENeg5" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
                         <div className="col-4">
                             <span className="icon style2 major fa-bell fa-2x"></span>
                             <h3>Belkin Boost Charge Cable</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B07P9ZDM5N" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2xkcYj9" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
                         <div className="col-4">
                             <span className="icon style2 major fa-anchor fa-2x"></span>
                             <h3>Anker USB C to Lightning Cable</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B07H27J698" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2FJODYR" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,21 +108,21 @@ class Homepage extends React.Component {
                         <span className="icon style2 major fa-apple fa-2x"></span>
                             <h3>Apple 18W USB-C Power Adapter</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B07L6TTC1T" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2NkPYLR" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
                         <div className="col-4">
                         <span className="icon style2 major fa-anchor fa-2x"></span>
                             <h3>Anker 30W USB-C Power Adapter</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B06Y427WT7" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2Xk588M" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
                         <div className="col-4">
                         <span className="icon style2 major fa-key fa-2x"></span>
                             <h3>Aukey 27W USB-C Power Adapter</h3>
                             <ul className="actions">
-                                <li><a href="https://www.amazon.com/dp/B071H2JGJ6" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
+                                <li><a href="https://amzn.to/2NippXt" target="_blank" rel="noopener noreferrer" className="button">Read More</a></li>
                             </ul>
                         </div>
 

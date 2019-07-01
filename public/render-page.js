@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@reach/router"), require("core-js/modules/es6.array.iterator"), require("core-js/modules/es6.array.sort"), require("core-js/modules/es6.function.name"), require("core-js/modules/es6.map"), require("core-js/modules/es6.object.assign"), require("core-js/modules/es6.object.to-string"), require("core-js/modules/es6.regexp.constructor"), require("core-js/modules/es6.regexp.split"), require("core-js/modules/es6.regexp.to-string"), require("core-js/modules/es6.string.ends-with"), require("core-js/modules/es6.string.iterator"), require("core-js/modules/web.dom.iterable"), require("crypto"), require("fs"), require("lodash"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("@reach/router"), require("core-js/modules/es6.object.assign"), require("core-js/modules/es6.object.to-string"), require("core-js/modules/es6.regexp.constructor"), require("core-js/modules/es6.regexp.split"), require("core-js/modules/es6.regexp.to-string"), require("crypto"), require("fs"), require("lodash"), require("minimatch"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["@reach/router", "core-js/modules/es6.array.iterator", "core-js/modules/es6.array.sort", "core-js/modules/es6.function.name", "core-js/modules/es6.map", "core-js/modules/es6.object.assign", "core-js/modules/es6.object.to-string", "core-js/modules/es6.regexp.constructor", "core-js/modules/es6.regexp.split", "core-js/modules/es6.regexp.to-string", "core-js/modules/es6.string.ends-with", "core-js/modules/es6.string.iterator", "core-js/modules/web.dom.iterable", "crypto", "fs", "lodash", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["@reach/router", "core-js/modules/es6.object.assign", "core-js/modules/es6.object.to-string", "core-js/modules/es6.regexp.constructor", "core-js/modules/es6.regexp.split", "core-js/modules/es6.regexp.to-string", "crypto", "fs", "lodash", "minimatch", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("@reach/router"), require("core-js/modules/es6.array.iterator"), require("core-js/modules/es6.array.sort"), require("core-js/modules/es6.function.name"), require("core-js/modules/es6.map"), require("core-js/modules/es6.object.assign"), require("core-js/modules/es6.object.to-string"), require("core-js/modules/es6.regexp.constructor"), require("core-js/modules/es6.regexp.split"), require("core-js/modules/es6.regexp.to-string"), require("core-js/modules/es6.string.ends-with"), require("core-js/modules/es6.string.iterator"), require("core-js/modules/web.dom.iterable"), require("crypto"), require("fs"), require("lodash"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("@reach/router"), require("core-js/modules/es6.object.assign"), require("core-js/modules/es6.object.to-string"), require("core-js/modules/es6.regexp.constructor"), require("core-js/modules/es6.regexp.split"), require("core-js/modules/es6.regexp.to-string"), require("crypto"), require("fs"), require("lodash"), require("minimatch"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["@reach/router"], root["core-js/modules/es6.array.iterator"], root["core-js/modules/es6.array.sort"], root["core-js/modules/es6.function.name"], root["core-js/modules/es6.map"], root["core-js/modules/es6.object.assign"], root["core-js/modules/es6.object.to-string"], root["core-js/modules/es6.regexp.constructor"], root["core-js/modules/es6.regexp.split"], root["core-js/modules/es6.regexp.to-string"], root["core-js/modules/es6.string.ends-with"], root["core-js/modules/es6.string.iterator"], root["core-js/modules/web.dom.iterable"], root["crypto"], root["fs"], root["lodash"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_iterator__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_sort__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_function_name__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_map__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_assign__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_to_string__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_constructor__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_split__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_to_string__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_ends_with__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_iterator__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_web_dom_iterable__, __WEBPACK_EXTERNAL_MODULE_crypto__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
+		root["lib"] = factory(root["@reach/router"], root["core-js/modules/es6.object.assign"], root["core-js/modules/es6.object.to-string"], root["core-js/modules/es6.regexp.constructor"], root["core-js/modules/es6.regexp.split"], root["core-js/modules/es6.regexp.to-string"], root["crypto"], root["fs"], root["lodash"], root["minimatch"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_assign__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_to_string__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_constructor__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_split__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_to_string__, __WEBPACK_EXTERNAL_MODULE_crypto__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash__, __WEBPACK_EXTERNAL_MODULE_minimatch__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/static-entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/develop-static-entry.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,6 +119,12 @@ var plugins = [{
     "theme_color": "#663399",
     "display": "minimal-ui",
     "icon": "src/assets/images/website-icon.png"
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-google-analytics/gatsby-ssr */ "./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "trackingId": "UA-76142495-2"
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -363,17 +369,6 @@ exports.wrapRootElement = true;
 
 /***/ }),
 
-/***/ "./.cache/data.json":
-/*!**************************!*\
-  !*** ./.cache/data.json ***!
-  \**************************/
-/*! exports provided: pages, dataPaths, default */
-/***/ (function(module) {
-
-module.exports = {"pages":[{"componentChunkName":"component---src-pages-index-js","jsonName":"index","path":"/"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-html-516","path":"/404.html"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-22d","path":"/404/"},{"componentChunkName":"component---node-modules-gatsby-plugin-offline-app-shell-js","jsonName":"offline-plugin-app-shell-fallback-a30","path":"/offline-plugin-app-shell-fallback/"}],"dataPaths":{"404-22d":"820/path---404-22-d-bce-0SUcWyAf8ecbYDsMhQkEfPzV8","404-html-516":"285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8","dev-404-page-5f9":"386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8","index":"140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8","offline-plugin-app-shell-fallback-a30":"604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8"}};
-
-/***/ }),
-
 /***/ "./.cache/default-html.js":
 /*!********************************!*\
   !*** ./.cache/default-html.js ***!
@@ -418,6 +413,160 @@ HTML.propTypes = {
   body: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   postBodyComponents: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array
 };
+
+/***/ }),
+
+/***/ "./.cache/develop-static-entry.js":
+/*!****************************************!*\
+  !*** ./.cache/develop-static-entry.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.object.assign */ "core-js/modules/es6.object.assign");
+/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.to-string */ "core-js/modules/es6.regexp.to-string");
+/* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.object.to-string */ "core-js/modules/es6.object.to-string");
+/* harmony import */ var core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.regexp.split */ "core-js/modules/es6.regexp.split");
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.regexp.constructor */ "core-js/modules/es6.regexp.constructor");
+/* harmony import */ var core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lodash */ "lodash");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_api_runner_ssr__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+ // import testRequireError from "./test-require-error"
+// For some extremely mysterious reason, webpack adds the above module *after*
+// this module so that when this code runs, testRequireError is undefined.
+// So in the meantime, we'll just inline it.
+
+var testRequireError = function testRequireError(moduleName, err) {
+  var regex = new RegExp("Error: Cannot find module\\s." + moduleName);
+  var firstLine = err.toString().split("\n")[0];
+  return regex.test(firstLine);
+};
+
+var Html;
+
+try {
+  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+} catch (err) {
+  if (testRequireError("../src/html", err)) {
+    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
+  } else {
+    console.log("There was an error requiring \"src/html.js\"\n\n", err, "\n\n");
+    process.exit();
+  }
+}
+
+Html = Html && Html.__esModule ? Html.default : Html;
+/* harmony default export */ __webpack_exports__["default"] = (function (pagePath, callback) {
+  var headComponents = [];
+  var htmlAttributes = {};
+  var bodyAttributes = {};
+  var preBodyComponents = [];
+  var postBodyComponents = [];
+  var bodyProps = {};
+  var htmlStr;
+
+  var setHeadComponents = function setHeadComponents(components) {
+    headComponents = headComponents.concat(components);
+  };
+
+  var setHtmlAttributes = function setHtmlAttributes(attributes) {
+    htmlAttributes = Object(lodash__WEBPACK_IMPORTED_MODULE_7__["merge"])(htmlAttributes, attributes);
+  };
+
+  var setBodyAttributes = function setBodyAttributes(attributes) {
+    bodyAttributes = Object(lodash__WEBPACK_IMPORTED_MODULE_7__["merge"])(bodyAttributes, attributes);
+  };
+
+  var setPreBodyComponents = function setPreBodyComponents(components) {
+    preBodyComponents = preBodyComponents.concat(components);
+  };
+
+  var setPostBodyComponents = function setPostBodyComponents(components) {
+    postBodyComponents = postBodyComponents.concat(components);
+  };
+
+  var setBodyProps = function setBodyProps(props) {
+    bodyProps = Object(lodash__WEBPACK_IMPORTED_MODULE_7__["merge"])({}, bodyProps, props);
+  };
+
+  var getHeadComponents = function getHeadComponents() {
+    return headComponents;
+  };
+
+  var replaceHeadComponents = function replaceHeadComponents(components) {
+    headComponents = components;
+  };
+
+  var getPreBodyComponents = function getPreBodyComponents() {
+    return preBodyComponents;
+  };
+
+  var replacePreBodyComponents = function replacePreBodyComponents(components) {
+    preBodyComponents = components;
+  };
+
+  var getPostBodyComponents = function getPostBodyComponents() {
+    return postBodyComponents;
+  };
+
+  var replacePostBodyComponents = function replacePostBodyComponents(components) {
+    postBodyComponents = components;
+  };
+
+  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_8___default()("onRenderBody", {
+    setHeadComponents: setHeadComponents,
+    setHtmlAttributes: setHtmlAttributes,
+    setBodyAttributes: setBodyAttributes,
+    setPreBodyComponents: setPreBodyComponents,
+    setPostBodyComponents: setPostBodyComponents,
+    setBodyProps: setBodyProps
+  });
+  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_8___default()("onPreRenderHTML", {
+    getHeadComponents: getHeadComponents,
+    replaceHeadComponents: replaceHeadComponents,
+    getPreBodyComponents: getPreBodyComponents,
+    replacePreBodyComponents: replacePreBodyComponents,
+    getPostBodyComponents: getPostBodyComponents,
+    replacePostBodyComponents: replacePostBodyComponents
+  });
+  var htmlElement = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Html, Object.assign({}, bodyProps, {
+    body: "",
+    headComponents: headComponents.concat([react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("script", {
+      key: "io",
+      src: "/socket.io/socket.io.js"
+    })]),
+    htmlAttributes: htmlAttributes,
+    bodyAttributes: bodyAttributes,
+    preBodyComponents: preBodyComponents,
+    postBodyComponents: postBodyComponents.concat([react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("script", {
+      key: "commons",
+      src: "/commons.js"
+    })])
+  }));
+  htmlStr = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_6__["renderToStaticMarkup"])(htmlElement);
+  htmlStr = "<!DOCTYPE html>" + htmlStr;
+  callback(null, htmlStr);
+});
 
 /***/ }),
 
@@ -473,7 +622,7 @@ var StaticQuery = function StaticQuery(props) {
 };
 
 var useStaticQuery = function useStaticQuery(query) {
-  if (typeof react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext !== "function" && "production" === "development") {
+  if (typeof react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext !== "function" && "development" === "development") {
     throw new Error("You're likely using a version of React that doesn't support Hooks\n" + "Please update React and ReactDOM to 16.8.0 or later to use the useStaticQuery hook.");
   }
 
@@ -517,481 +666,6 @@ if (false) {} else if (false) {} else {
     return null;
   };
 }
-
-/***/ }),
-
-/***/ "./.cache/static-entry.js":
-/*!********************************!*\
-  !*** ./.cache/static-entry.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_string_ends_with__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.string.ends-with */ "core-js/modules/es6.string.ends-with");
-/* harmony import */ var core_js_modules_es6_string_ends_with__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_ends_with__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.function.name */ "core-js/modules/es6.function.name");
-/* harmony import */ var core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es6_array_sort__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.array.sort */ "core-js/modules/es6.array.sort");
-/* harmony import */ var core_js_modules_es6_array_sort__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_sort__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.object.assign */ "core-js/modules/es6.object.assign");
-/* harmony import */ var core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_assign__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.regexp.to-string */ "core-js/modules/es6.regexp.to-string");
-/* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.regexp.split */ "core-js/modules/es6.regexp.split");
-/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.regexp.constructor */ "core-js/modules/es6.regexp.constructor");
-/* harmony import */ var core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_constructor__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "core-js/modules/web.dom.iterable");
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es6.array.iterator */ "core-js/modules/es6.array.iterator");
-/* harmony import */ var core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es6.object.to-string */ "core-js/modules/es6.object.to-string");
-/* harmony import */ var core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es6.string.iterator */ "core-js/modules/es6.string.iterator");
-/* harmony import */ var core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es6_map__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es6.map */ "core-js/modules/es6.map");
-/* harmony import */ var core_js_modules_es6_map__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_map__WEBPACK_IMPORTED_MODULE_12__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var React = __webpack_require__(/*! react */ "react");
-
-var fs = __webpack_require__(/*! fs */ "fs");
-
-var _require = __webpack_require__(/*! path */ "path"),
-    join = _require.join;
-
-var _require2 = __webpack_require__(/*! react-dom/server */ "react-dom/server"),
-    renderToString = _require2.renderToString,
-    renderToStaticMarkup = _require2.renderToStaticMarkup;
-
-var _require3 = __webpack_require__(/*! @reach/router */ "@reach/router"),
-    ServerLocation = _require3.ServerLocation,
-    Router = _require3.Router,
-    isRedirect = _require3.isRedirect;
-
-var _require4 = __webpack_require__(/*! lodash */ "lodash"),
-    get = _require4.get,
-    merge = _require4.merge,
-    isObject = _require4.isObject,
-    flatten = _require4.flatten,
-    uniqBy = _require4.uniqBy;
-
-var apiRunner = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
-
-var syncRequires = __webpack_require__(/*! ./sync-requires */ "./.cache/sync-requires.js");
-
-var _require5 = __webpack_require__(/*! ./data.json */ "./.cache/data.json"),
-    dataPaths = _require5.dataPaths,
-    pages = _require5.pages;
-
-var _require6 = __webpack_require__(/*! gatsby/package.json */ "./node_modules/gatsby/package.json"),
-    gatsbyVersion = _require6.version; // Speed up looking up pages.
-
-
-var pagesObjectMap = new Map();
-pages.forEach(function (p) {
-  return pagesObjectMap.set(p.path, p);
-});
-var stats = JSON.parse(fs.readFileSync(process.cwd() + "/public/webpack.stats.json", "utf-8"));
-var chunkMapping = JSON.parse(fs.readFileSync(process.cwd() + "/public/chunk-map.json", "utf-8")); // const testRequireError = require("./test-require-error")
-// For some extremely mysterious reason, webpack adds the above module *after*
-// this module so that when this code runs, testRequireError is undefined.
-// So in the meantime, we'll just inline it.
-
-var testRequireError = function testRequireError(moduleName, err) {
-  var regex = new RegExp("Error: Cannot find module\\s." + moduleName);
-  var firstLine = err.toString().split("\n")[0];
-  return regex.test(firstLine);
-};
-
-var Html;
-
-try {
-  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-} catch (err) {
-  if (testRequireError("../src/html", err)) {
-    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
-  } else {
-    throw err;
-  }
-}
-
-Html = Html && Html.__esModule ? Html.default : Html;
-
-var getPage = function getPage(path) {
-  return pagesObjectMap.get(path);
-};
-
-var createElement = React.createElement;
-
-var sanitizeComponents = function sanitizeComponents(components) {
-  if (Array.isArray(components)) {
-    // remove falsy items
-    return components.filter(function (val) {
-      return Array.isArray(val) ? val.length > 0 : val;
-    });
-  } else {
-    // we also accept single components, so we need to handle this case as well
-    return components ? [components] : [];
-  }
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (function (pagePath, callback) {
-  var _postBodyComponents;
-
-  var bodyHtml = "";
-  var headComponents = [React.createElement("meta", {
-    name: "generator",
-    content: "Gatsby " + gatsbyVersion,
-    key: "generator-" + gatsbyVersion
-  })];
-  var htmlAttributes = {};
-  var bodyAttributes = {};
-  var preBodyComponents = [];
-  var postBodyComponents = [];
-  var bodyProps = {};
-
-  var replaceBodyHTMLString = function replaceBodyHTMLString(body) {
-    bodyHtml = body;
-  };
-
-  var setHeadComponents = function setHeadComponents(components) {
-    headComponents = headComponents.concat(sanitizeComponents(components));
-  };
-
-  var setHtmlAttributes = function setHtmlAttributes(attributes) {
-    htmlAttributes = merge(htmlAttributes, attributes);
-  };
-
-  var setBodyAttributes = function setBodyAttributes(attributes) {
-    bodyAttributes = merge(bodyAttributes, attributes);
-  };
-
-  var setPreBodyComponents = function setPreBodyComponents(components) {
-    preBodyComponents = preBodyComponents.concat(sanitizeComponents(components));
-  };
-
-  var setPostBodyComponents = function setPostBodyComponents(components) {
-    postBodyComponents = postBodyComponents.concat(sanitizeComponents(components));
-  };
-
-  var setBodyProps = function setBodyProps(props) {
-    bodyProps = merge({}, bodyProps, props);
-  };
-
-  var getHeadComponents = function getHeadComponents() {
-    return headComponents;
-  };
-
-  var replaceHeadComponents = function replaceHeadComponents(components) {
-    headComponents = sanitizeComponents(components);
-  };
-
-  var getPreBodyComponents = function getPreBodyComponents() {
-    return preBodyComponents;
-  };
-
-  var replacePreBodyComponents = function replacePreBodyComponents(components) {
-    preBodyComponents = sanitizeComponents(components);
-  };
-
-  var getPostBodyComponents = function getPostBodyComponents() {
-    return postBodyComponents;
-  };
-
-  var replacePostBodyComponents = function replacePostBodyComponents(components) {
-    postBodyComponents = sanitizeComponents(components);
-  };
-
-  var page = getPage(pagePath);
-  var dataAndContext = {};
-
-  if (page.jsonName in dataPaths) {
-    var pathToJsonData = join(process.cwd(), "/public/static/d", dataPaths[page.jsonName] + ".json");
-
-    try {
-      dataAndContext = JSON.parse(fs.readFileSync(pathToJsonData));
-    } catch (e) {
-      console.log("error", pathToJsonData, e);
-      process.exit();
-    }
-  }
-
-  var RouteHandler =
-  /*#__PURE__*/
-  function (_React$Component) {
-    _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_4___default()(RouteHandler, _React$Component);
-
-    function RouteHandler() {
-      return _React$Component.apply(this, arguments) || this;
-    }
-
-    var _proto = RouteHandler.prototype;
-
-    _proto.render = function render() {
-      var props = Object.assign({}, this.props, dataAndContext, {
-        pathContext: dataAndContext.pageContext
-      });
-      var pageElement = createElement(syncRequires.components[page.componentChunkName], props);
-      var wrappedPage = apiRunner("wrapPageElement", {
-        element: pageElement,
-        props: props
-      }, pageElement, function (_ref) {
-        var result = _ref.result;
-        return {
-          element: result,
-          props: props
-        };
-      }).pop();
-      return wrappedPage;
-    };
-
-    return RouteHandler;
-  }(React.Component);
-
-  var routerElement = createElement(ServerLocation, {
-    url: "" + "" + pagePath
-  }, createElement(Router, {
-    baseuri: "" + ""
-  }, createElement(RouteHandler, {
-    path: "/*"
-  })));
-  var bodyComponent = apiRunner("wrapRootElement", {
-    element: routerElement,
-    pathname: pagePath
-  }, routerElement, function (_ref2) {
-    var result = _ref2.result;
-    return {
-      element: result,
-      pathname: pagePath
-    };
-  }).pop(); // Let the site or plugin render the page component.
-
-  apiRunner("replaceRenderer", {
-    bodyComponent: bodyComponent,
-    replaceBodyHTMLString: replaceBodyHTMLString,
-    setHeadComponents: setHeadComponents,
-    setHtmlAttributes: setHtmlAttributes,
-    setBodyAttributes: setBodyAttributes,
-    setPreBodyComponents: setPreBodyComponents,
-    setPostBodyComponents: setPostBodyComponents,
-    setBodyProps: setBodyProps,
-    pathname: pagePath,
-    pathPrefix: ""
-  }); // If no one stepped up, we'll handle it.
-
-  if (!bodyHtml) {
-    try {
-      bodyHtml = renderToString(bodyComponent);
-    } catch (e) {
-      // ignore @reach/router redirect errors
-      if (!isRedirect(e)) throw e;
-    }
-  } // Create paths to scripts
-
-
-  var scriptsAndStyles = flatten(["app", page.componentChunkName].map(function (s) {
-    var fetchKey = "assetsByChunkName[" + s + "]";
-    var chunks = get(stats, fetchKey);
-    var namedChunkGroups = get(stats, "namedChunkGroups");
-
-    if (!chunks) {
-      return null;
-    }
-
-    chunks = chunks.map(function (chunk) {
-      if (chunk === "/") {
-        return null;
-      }
-
-      return {
-        rel: "preload",
-        name: chunk
-      };
-    });
-    namedChunkGroups[s].assets.forEach(function (asset) {
-      return chunks.push({
-        rel: "preload",
-        name: asset
-      });
-    });
-    var childAssets = namedChunkGroups[s].childAssets;
-
-    var _loop = function _loop(rel) {
-      chunks = merge(chunks, childAssets[rel].map(function (chunk) {
-        return {
-          rel: rel,
-          name: chunk
-        };
-      }));
-    };
-
-    for (var rel in childAssets) {
-      _loop(rel);
-    }
-
-    return chunks;
-  })).filter(function (s) {
-    return isObject(s);
-  }).sort(function (s1, s2) {
-    return s1.rel == "preload" ? -1 : 1;
-  }); // given priority to preload
-
-  scriptsAndStyles = uniqBy(scriptsAndStyles, function (item) {
-    return item.name;
-  });
-  var scripts = scriptsAndStyles.filter(function (script) {
-    return script.name && script.name.endsWith(".js");
-  });
-  var styles = scriptsAndStyles.filter(function (style) {
-    return style.name && style.name.endsWith(".css");
-  });
-  apiRunner("onRenderBody", {
-    setHeadComponents: setHeadComponents,
-    setHtmlAttributes: setHtmlAttributes,
-    setBodyAttributes: setBodyAttributes,
-    setPreBodyComponents: setPreBodyComponents,
-    setPostBodyComponents: setPostBodyComponents,
-    setBodyProps: setBodyProps,
-    pathname: pagePath,
-    bodyHtml: bodyHtml,
-    scripts: scripts,
-    styles: styles,
-    pathPrefix: ""
-  });
-  scripts.slice(0).reverse().forEach(function (script) {
-    // Add preload/prefetch <link>s for scripts.
-    headComponents.push(React.createElement("link", {
-      as: "script",
-      rel: script.rel,
-      key: script.name,
-      href: "" + "/" + script.name
-    }));
-  });
-
-  if (page.jsonName in dataPaths) {
-    var dataPath = "" + "/static/d/" + dataPaths[page.jsonName] + ".json";
-    headComponents.push(React.createElement("link", {
-      as: "fetch",
-      rel: "preload",
-      key: dataPath,
-      href: dataPath,
-      crossOrigin: "use-credentials"
-    }));
-  }
-
-  styles.slice(0).reverse().forEach(function (style) {
-    // Add <link>s for styles that should be prefetched
-    // otherwise, inline as a <style> tag
-    if (style.rel === "prefetch") {
-      headComponents.push(React.createElement("link", {
-        as: "style",
-        rel: style.rel,
-        key: style.name,
-        href: "" + "/" + style.name
-      }));
-    } else {
-      headComponents.unshift(React.createElement("style", {
-        "data-href": "" + "/" + style.name,
-        dangerouslySetInnerHTML: {
-          __html: fs.readFileSync(join(process.cwd(), "public", style.name), "utf-8")
-        }
-      }));
-    }
-  }); // Add page metadata for the current page
-
-  var windowData = "/*<![CDATA[*/window.page=" + JSON.stringify(page) + ";" + (page.jsonName in dataPaths ? "window.dataPath=\"" + dataPaths[page.jsonName] + "\";" : "") + "/*]]>*/";
-  postBodyComponents.push(React.createElement("script", {
-    key: "script-loader",
-    id: "gatsby-script-loader",
-    dangerouslySetInnerHTML: {
-      __html: windowData
-    }
-  })); // Add chunk mapping metadata
-
-  var scriptChunkMapping = "/*<![CDATA[*/window.___chunkMapping=" + JSON.stringify(chunkMapping) + ";/*]]>*/";
-  postBodyComponents.push(React.createElement("script", {
-    key: "chunk-mapping",
-    id: "gatsby-chunk-mapping",
-    dangerouslySetInnerHTML: {
-      __html: scriptChunkMapping
-    }
-  })); // Filter out prefetched bundles as adding them as a script tag
-  // would force high priority fetching.
-
-  var bodyScripts = scripts.filter(function (s) {
-    return s.rel !== "prefetch";
-  }).map(function (s) {
-    var scriptPath = "" + "/" + JSON.stringify(s.name).slice(1, -1);
-    return React.createElement("script", {
-      key: scriptPath,
-      src: scriptPath,
-      async: true
-    });
-  });
-
-  (_postBodyComponents = postBodyComponents).push.apply(_postBodyComponents, bodyScripts);
-
-  apiRunner("onPreRenderHTML", {
-    getHeadComponents: getHeadComponents,
-    replaceHeadComponents: replaceHeadComponents,
-    getPreBodyComponents: getPreBodyComponents,
-    replacePreBodyComponents: replacePreBodyComponents,
-    getPostBodyComponents: getPostBodyComponents,
-    replacePostBodyComponents: replacePostBodyComponents,
-    pathname: pagePath,
-    pathPrefix: ""
-  });
-  var html = "<!DOCTYPE html>" + renderToStaticMarkup(React.createElement(Html, Object.assign({}, bodyProps, {
-    headComponents: headComponents,
-    htmlAttributes: htmlAttributes,
-    bodyAttributes: bodyAttributes,
-    preBodyComponents: preBodyComponents,
-    postBodyComponents: postBodyComponents,
-    body: bodyHtml,
-    path: pagePath
-  })));
-  callback(null, html);
-});
-
-/***/ }),
-
-/***/ "./.cache/sync-requires.js":
-/*!*********************************!*\
-  !*** ./.cache/sync-requires.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _require = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js"),
-    hot = _require.hot; // prefer default export if available
-
-
-var preferDefault = function preferDefault(m) {
-  return m && m.default || m;
-};
-
-exports.components = {
-  "component---node-modules-gatsby-plugin-offline-app-shell-js": hot(preferDefault(__webpack_require__(/*! ./node_modules/gatsby-plugin-offline/app-shell.js */ "./node_modules/gatsby-plugin-offline/app-shell.js"))),
-  "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
-};
 
 /***/ }),
 
@@ -1286,7 +960,9 @@ function (_React$Component) {
         rest = (0, _objectWithoutPropertiesLoose2.default)(_this$props, ["to", "getProps", "onClick", "onMouseEnter", "activeClassName", "activeStyle", "innerRef", "partiallyActive", "state", "replace"]);
     var LOCAL_URL = /^\/(?!\/)/;
 
-    if (false) {}
+    if ( true && !LOCAL_URL.test(to)) {
+      console.warn("External link " + to + " was detected in a Link component. Use the Link component only for internal links. See: https://gatsby.dev/internal-links");
+    }
 
     var prefixedTo = withPrefix(to);
     return _react.default.createElement(_router.Link, (0, _extends2.default)({
@@ -1411,6 +1087,83 @@ function parsePath(path) {
     hash: hash === "#" ? "" : hash
   };
 }
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.onRenderBody = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var knownOptions = {
+  clientId: "string",
+  sampleRate: "number",
+  siteSpeedSampleRate: "number",
+  alwaysSendReferrer: "boolean",
+  allowAnchor: "boolean",
+  cookieName: "string",
+  cookieExpires: "number",
+  storeGac: "boolean",
+  legacyCookieDomain: "string",
+  legacyHistoryImport: "boolean",
+  allowLinker: "boolean"
+};
+
+var onRenderBody = function onRenderBody(_ref, pluginOptions) {
+  var setHeadComponents = _ref.setHeadComponents,
+      setPostBodyComponents = _ref.setPostBodyComponents;
+
+  if (true) {
+    return null;
+  } // Lighthouse recommends pre-connecting to google analytics
+
+
+  setHeadComponents([_react.default.createElement("link", {
+    rel: "preconnect dns-prefetch",
+    key: "preconnect-google-analytics",
+    href: "https://www.google-analytics.com"
+  })]);
+  var excludeGAPaths = [];
+
+  if (typeof pluginOptions.exclude !== "undefined") {
+    var Minimatch = __webpack_require__(/*! minimatch */ "minimatch").Minimatch;
+
+    pluginOptions.exclude.map(function (exclude) {
+      var mm = new Minimatch(exclude);
+      excludeGAPaths.push(mm.makeRe());
+    });
+  }
+
+  var gaCreateOptions = {};
+
+  for (var option in knownOptions) {
+    if (typeof pluginOptions[option] === knownOptions[option]) {
+      gaCreateOptions[option] = pluginOptions[option];
+    }
+  }
+
+  var setComponents = pluginOptions.head ? setHeadComponents : setPostBodyComponents;
+  return setComponents([_react.default.createElement("script", {
+    key: "gatsby-plugin-google-analytics",
+    dangerouslySetInnerHTML: {
+      __html: "\n  " + (excludeGAPaths.length ? "window.excludeGAPaths=[" + excludeGAPaths.join(",") + "];" : "") + "\n  " + (typeof pluginOptions.anonymize !== "undefined" && pluginOptions.anonymize === true ? "function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='" + pluginOptions.trackingId + "',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);" : "") + "\n  if(" + (typeof pluginOptions.respectDNT !== "undefined" && pluginOptions.respectDNT == true ? "!(navigator.doNotTrack == \"1\" || window.doNotTrack == \"1\")" : "true") + ") {\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\n  }\n  if (typeof ga === \"function\") {\n    ga('create', '" + pluginOptions.trackingId + "', '" + (typeof pluginOptions.cookieDomain === "string" ? pluginOptions.cookieDomain : "auto") + "', " + (typeof pluginOptions.name === "string" ? "'" + pluginOptions.name + "', " : "") + JSON.stringify(gaCreateOptions) + ");\n      " + (typeof pluginOptions.anonymize !== "undefined" && pluginOptions.anonymize === true ? "ga('set', 'anonymizeIp', true);" : "") + "\n      " + (typeof pluginOptions.optimizeId !== "undefined" ? "ga('require', '" + pluginOptions.optimizeId + "');" : "") + "\n      " + (typeof pluginOptions.experimentId !== "undefined" ? "ga('set', 'expId', '" + pluginOptions.experimentId + "');" : "") + "\n      " + (typeof pluginOptions.variationId !== "undefined" ? "ga('set', 'expVar', '" + pluginOptions.variationId + "');" : "") + "}\n      "
+    }
+  })]);
+};
+
+exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
@@ -1596,48 +1349,6 @@ exports.onRenderBody = function (_ref, pluginOptions) {
 
 /***/ }),
 
-/***/ "./node_modules/gatsby-plugin-offline/app-shell.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-offline/app-shell.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
-var AppShell =
-/*#__PURE__*/
-function (_React$Component) {
-  (0, _inheritsLoose2.default)(AppShell, _React$Component);
-
-  function AppShell() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = AppShell.prototype;
-
-  _proto.render = function render() {
-    return _react.default.createElement(_react.default.Fragment, null);
-  };
-
-  return AppShell;
-}(_react.default.Component);
-
-var _default = AppShell;
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js":
 /*!***************************************************************!*\
   !*** ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js ***!
@@ -1676,21 +1387,112 @@ exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
-/***/ "./node_modules/gatsby/package.json":
-/*!******************************************!*\
-  !*** ./node_modules/gatsby/package.json ***!
-  \******************************************/
-/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bin, bugs, bundleDependencies, dependencies, deprecated, description, devDependencies, engines, files, gitHead, homepage, keywords, license, main, module, name, peerDependencies, repository, resolutions, scripts, types, version, yargs, default */
-/***/ (function(module) {
+/***/ "./node_modules/object-assign/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/object-assign/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = {"_from":"gatsby@2.3.12","_id":"gatsby@2.3.12","_inBundle":false,"_integrity":"sha512-bHqlP0qP8AZt/W6nBE+N9YVgG/BYTlmVt5HgY2uqq5rj3Y9JKRuyUjtGxyxfM4Q5cpKIOfDJ7wBqdTWxjNiSkw==","_location":"/gatsby","_phantomChildren":{"@babel/code-frame":"7.0.0","@babel/runtime":"7.4.3","address":"1.0.3","bluebird":"3.5.4","common-tags":"1.8.0","convert-hrtime":"2.0.0","core-js":"2.6.5","cross-spawn":"5.1.0","decamelize":"1.2.0","envinfo":"5.12.1","fs-exists-cached":"1.0.0","gatsby-telemetry":"1.0.4","get-caller-file":"1.0.3","get-stream":"3.0.0","graceful-fs":"4.2.0","hosted-git-info":"2.7.1","is-stream":"1.1.0","jsonfile":"4.0.0","lodash":"4.17.11","map-age-cleaner":"0.1.3","meant":"1.0.1","nice-try":"1.0.5","npm-run-path":"2.0.2","opentracing":"0.14.3","p-finally":"1.0.0","p-is-promise":"2.1.0","path-exists":"3.0.0","path-key":"2.0.1","pretty-error":"2.1.1","pump":"3.0.0","require-directory":"2.1.1","require-main-filename":"1.0.1","resolve-cwd":"2.0.0","semver":"5.7.0","set-blocking":"2.0.0","shebang-command":"1.2.0","signal-exit":"3.0.2","source-map":"0.5.7","stack-trace":"0.0.10","string-width":"2.1.1","strip-eof":"1.0.0","universalify":"0.1.2","update-notifier":"2.5.0","uuid":"3.3.2","which":"1.3.1","which-module":"2.0.0","wrap-ansi":"2.1.0","y18n":"3.2.1","yurnalist":"1.0.5"},"_requested":{"type":"version","registry":true,"raw":"gatsby@2.3.12","name":"gatsby","escapedName":"gatsby","rawSpec":"2.3.12","saveSpec":null,"fetchSpec":"2.3.12"},"_requiredBy":["/"],"_resolved":"https://registry.npmjs.org/gatsby/-/gatsby-2.3.12.tgz","_shasum":"22f1eda449723b4afb3c12ca379fa17d9b19e300","_spec":"gatsby@2.3.12","_where":"/Users/alidemirci/Desktop/aff-charge-poc/gatsby-starter-photon","author":{"name":"Kyle Mathews","email":"mathews.kyle@gmail.com"},"bin":{"gatsby":"./dist/bin/gatsby.js"},"bugs":{"url":"https://github.com/gatsbyjs/gatsby/issues"},"bundleDependencies":false,"dependencies":{"@babel/code-frame":"^7.0.0","@babel/core":"^7.0.0","@babel/parser":"^7.0.0","@babel/polyfill":"^7.0.0","@babel/runtime":"^7.0.0","@babel/traverse":"^7.0.0","@gatsbyjs/relay-compiler":"2.0.0-printer-fix.2","@mikaelkristiansson/domready":"^1.0.9","@pieh/friendly-errors-webpack-plugin":"1.7.0-chalk-2","@reach/router":"^1.1.1","@stefanprobst/lokijs":"^1.5.6-b","address":"1.0.3","autoprefixer":"^9.4.3","babel-core":"7.0.0-bridge.0","babel-eslint":"^9.0.0","babel-loader":"^8.0.0","babel-plugin-add-module-exports":"^0.2.1","babel-plugin-dynamic-import-node":"^1.2.0","babel-plugin-remove-graphql-queries":"^2.6.3","babel-preset-gatsby":"^0.1.11","better-opn":"0.1.4","better-queue":"^3.8.6","bluebird":"^3.5.0","browserslist":"3.2.8","cache-manager":"^2.9.0","cache-manager-fs-hash":"^0.0.6","chalk":"^2.3.2","chokidar":"2.1.2","common-tags":"^1.4.0","compression":"^1.7.3","convert-hrtime":"^2.0.0","copyfiles":"^1.2.0","core-js":"^2.5.0","css-loader":"^1.0.0","debug":"^3.1.0","del":"^3.0.0","detect-port":"^1.2.1","devcert-san":"^0.3.3","dotenv":"^4.0.0","eslint":"^5.6.0","eslint-config-react-app":"^3.0.0","eslint-loader":"^2.1.0","eslint-plugin-flowtype":"^2.46.1","eslint-plugin-graphql":"^2.0.0","eslint-plugin-import":"^2.9.0","eslint-plugin-jsx-a11y":"^6.0.3","eslint-plugin-react":"^7.8.2","event-source-polyfill":"^1.0.5","express":"^4.16.3","express-graphql":"^0.6.12","fast-levenshtein":"~2.0.4","file-loader":"^1.1.11","flat":"^4.0.0","fs-exists-cached":"1.0.0","fs-extra":"^5.0.0","gatsby-cli":"^2.5.4","gatsby-link":"^2.0.16","gatsby-plugin-page-creator":"^2.0.12","gatsby-react-router-scroll":"^2.0.7","gatsby-telemetry":"^1.0.4","glob":"^7.1.1","graphql":"^14.1.1","graphql-compose":"^6.0.3","graphql-playground-middleware-express":"^1.7.10","graphql-relay":"^0.6.0","graphql-tools":"^3.0.4","hash-mod":"^0.0.5","invariant":"^2.2.4","is-relative":"^1.0.0","is-relative-url":"^2.0.0","is-wsl":"^1.1.0","jest-worker":"^23.2.0","joi":"12.x.x","json-loader":"^0.5.7","json-stringify-safe":"^5.0.1","kebab-hash":"^0.1.2","lodash":"^4.17.10","md5":"^2.2.1","md5-file":"^3.1.1","mime":"^2.2.0","mini-css-extract-plugin":"^0.4.0","mitt":"^1.1.2","mkdirp":"^0.5.1","moment":"^2.21.0","name-all-modules-plugin":"^1.0.1","normalize-path":"^2.1.1","null-loader":"^0.1.1","opentracing":"^0.14.3","optimize-css-assets-webpack-plugin":"^5.0.1","parseurl":"^1.3.2","physical-cpu-count":"^2.0.0","pnp-webpack-plugin":"^1.4.1","postcss-flexbugs-fixes":"^3.0.0","postcss-loader":"^2.1.3","prop-types":"^15.6.1","raw-loader":"^0.5.1","react-dev-utils":"^4.2.1","react-error-overlay":"^3.0.0","react-hot-loader":"^4.6.2","redux":"^4.0.0","request":"^2.85.0","semver":"^5.6.0","shallow-compare":"^1.2.2","sift":"^5.1.0","signal-exit":"^3.0.2","slash":"^1.0.0","socket.io":"^2.0.3","stack-trace":"^0.0.10","string-similarity":"^1.2.0","style-loader":"^0.21.0","terser-webpack-plugin":"^1.2.2","true-case-path":"^1.0.3","type-of":"^2.0.1","url-loader":"^1.0.1","util.promisify":"^1.0.0","uuid":"^3.1.0","v8-compile-cache":"^1.1.0","webpack":"~4.28.4","webpack-dev-middleware":"^3.0.1","webpack-dev-server":"^3.1.14","webpack-hot-middleware":"^2.21.0","webpack-merge":"^4.1.0","webpack-stats-plugin":"^0.1.5","xstate":"^4.3.2","yaml-loader":"^0.5.0"},"deprecated":false,"description":"Blazing fast modern site generator for React","devDependencies":{"@babel/cli":"^7.0.0","@babel/runtime":"^7.0.0","babel-preset-gatsby-package":"^0.1.4","cross-env":"^5.1.4","rimraf":"^2.6.1"},"engines":{"node":">=6.0.0"},"files":["cache-dir","dist","graphql.js","index.d.ts"],"gitHead":"8ee6c8ddbccd41f76d8203a2e8f9d975056f2fcb","homepage":"https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby#readme","keywords":["blog","generator","jekyll","markdown","react","ssg","website"],"license":"MIT","main":"cache-dir/commonjs/gatsby-browser-entry.js","module":"cache-dir/gatsby-browser-entry.js","name":"gatsby","peerDependencies":{"react":"^16.4.2","react-dom":"^16.4.2"},"repository":{"type":"git","url":"git+https://github.com/gatsbyjs/gatsby.git"},"resolutions":{"graphql":"^14.1.1"},"scripts":{"build":"npm run build:src && npm run build:internal-plugins && npm run build:rawfiles && npm run build:cjs","build:cjs":"babel cache-dir --out-dir cache-dir/commonjs --ignore **/__tests__","build:internal-plugins":"copyfiles -u 1 src/internal-plugins/**/package.json dist","build:rawfiles":"copyfiles -u 1 src/internal-plugins/**/raw_* dist","build:src":"babel src --out-dir dist --source-maps --ignore **/gatsby-cli.js,**/raw_*,**/__tests__","clean-test-bundles":"find test/ -type f -name bundle.js* -exec rm -rf {} +","prebuild":"rimraf dist && rimraf cache-dir/commonjs","prepare":"cross-env NODE_ENV=production npm run build","watch":"rimraf dist && mkdir dist && npm run build:internal-plugins && npm run build:rawfiles && npm run build:src -- --watch"},"types":"index.d.ts","version":"2.3.12","yargs":{"boolean-negation":false}};
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
 
 /***/ }),
 
-/***/ "./node_modules/prop-types/factoryWithThrowingShims.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/prop-types/factoryWithThrowingShims.js ***!
-  \*************************************************************/
+/***/ "./node_modules/prop-types/checkPropTypes.js":
+/*!***************************************************!*\
+  !*** ./node_modules/prop-types/checkPropTypes.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1704,57 +1506,698 @@ module.exports = {"_from":"gatsby@2.3.12","_id":"gatsby@2.3.12","_inBundle":fals
 
 
 
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var printWarning = function() {};
 
-function emptyFunction() {}
-function emptyFunctionWithReset() {}
-emptyFunctionWithReset.resetWarningCache = emptyFunction;
+if (true) {
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var loggedTypeFailures = {};
+  var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
-module.exports = function() {
-  function shim(props, propName, componentName, location, propFullName, secret) {
-    if (secret === ReactPropTypesSecret) {
-      // It is still safe when called from React.
-      return;
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
     }
-    var err = new Error(
-      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-      'Use PropTypes.checkPropTypes() to call them. ' +
-      'Read more at http://fb.me/use-check-prop-types'
-    );
-    err.name = 'Invariant Violation';
-    throw err;
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
   };
-  shim.isRequired = shim;
-  function getShim() {
-    return shim;
+}
+
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if (true) {
+    for (var typeSpecName in typeSpecs) {
+      if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error(
+              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
+              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
+            );
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+        if (error && !(error instanceof Error)) {
+          printWarning(
+            (componentName || 'React class') + ': type specification of ' +
+            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
+            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
+            'You may have forgotten to pass an argument to the type checker ' +
+            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
+            'shape all require an argument).'
+          );
+        }
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+
+          var stack = getStack ? getStack() : '';
+
+          printWarning(
+            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
+          );
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */
+checkPropTypes.resetWarningCache = function() {
+  if (true) {
+    loggedTypeFailures = {};
+  }
+}
+
+module.exports = checkPropTypes;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var has = Function.call.bind(Object.prototype.hasOwnProperty);
+var printWarning = function() {};
+
+if (true) {
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
   };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function(isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
   // Important!
-  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
   var ReactPropTypes = {
-    array: shim,
-    bool: shim,
-    func: shim,
-    number: shim,
-    object: shim,
-    string: shim,
-    symbol: shim,
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
 
-    any: shim,
-    arrayOf: getShim,
-    element: shim,
-    elementType: shim,
-    instanceOf: getShim,
-    node: shim,
-    objectOf: getShim,
-    oneOf: getShim,
-    oneOfType: getShim,
-    shape: getShim,
-    exact: getShim,
-
-    checkPropTypes: emptyFunctionWithReset,
-    resetWarningCache: emptyFunction
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
   };
 
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error(
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            printWarning(
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
+            );
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if (true) {
+        if (arguments.length > 1) {
+          printWarning(
+            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
+            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
+          );
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+        if (type === 'symbol') {
+          return String(value);
+        }
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning(
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
+          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
+        );
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // falsy value can't be a Symbol
+    if (!propValue) {
+      return false;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
   ReactPropTypes.PropTypes = ReactPropTypes;
 
   return ReactPropTypes;
@@ -1777,11 +2220,14 @@ module.exports = function() {
  * LICENSE file in the root directory of this source tree.
  */
 
-if (false) { var throwOnDirectAccess, ReactIs; } else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(/*! ./factoryWithThrowingShims */ "./node_modules/prop-types/factoryWithThrowingShims.js")();
-}
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+} else {}
 
 
 /***/ }),
@@ -1810,465 +2256,259 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "./node_modules/react-hot-loader/root.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-hot-loader/root.js ***!
-  \***********************************************/
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-if (false) { var parent, cache, hot; } else {
-  // prod mode
-  exports.hot = function(a) {
-    return a
+"use strict";
+/** @license React v16.8.6
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' ||
+  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+}
+
+/**
+ * Forked from fbjs/warning:
+ * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
+ *
+ * Only change is we use console.warn instead of console.error,
+ * and do nothing when 'console' is not supported.
+ * This really simplifies the code.
+ * ---
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var lowPriorityWarning = function () {};
+
+{
+  var printWarning = function (format) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+    if (typeof console !== 'undefined') {
+      console.warn(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  lowPriorityWarning = function (condition, format) {
+    if (format === undefined) {
+      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+    if (!condition) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(undefined, [format].concat(args));
+    }
+  };
+}
+
+var lowPriorityWarning$1 = lowPriorityWarning;
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+              default:
+                return $$typeof;
+            }
+        }
+      case REACT_LAZY_TYPE:
+      case REACT_MEMO_TYPE:
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
   }
+
+  return undefined;
+}
+
+// AsyncMode is deprecated along with isAsyncMode
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+
+var hasWarnedAboutDeprecatedIsAsyncMode = false;
+
+// AsyncMode should be deprecated
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true;
+      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.typeOf = typeOf;
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isValidElementType = isValidElementType;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+  })();
 }
 
 
 /***/ }),
 
-/***/ "./src/assets/images/pic01.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/pic01.jpg ***!
-  \*************************************/
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABBAAD/4QNvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OUVCMUVDNzZCMkJGRTQxMTgzMURBRTUwQTdBOTIwNzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTQ5Mjk2OTFDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTQ5Mjk2OTBDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOTczQTZBQTAxQzFFNDExQjU5RUI4ODkxRjczNTA2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5RUIxRUM3NkIyQkZFNDExODMxREFFNTBBN0E5MjA3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6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"
-
-/***/ }),
-
-/***/ "./src/assets/images/pic02.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/pic02.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABBAAD/4QNvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OUVCMUVDNzZCMkJGRTQxMTgzMURBRTUwQTdBOTIwNzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTRDRTE4RUZDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTRDRTE4RUVDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOTczQTZBQTAxQzFFNDExQjU5RUI4ODkxRjczNTA2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5RUIxRUM3NkIyQkZFNDExODMxREFFNTBBN0E5MjA3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6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"
-
-/***/ }),
-
-/***/ "./src/assets/images/pic03.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/pic03.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABBAAD/4QNvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OUVCMUVDNzZCMkJGRTQxMTgzMURBRTUwQTdBOTIwNzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTRDRTE4RjNDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTRDRTE4RjJDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOTczQTZBQTAxQzFFNDExQjU5RUI4ODkxRjczNTA2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5RUIxRUM3NkIyQkZFNDExODMxREFFNTBBN0E5MjA3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6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"
-
-/***/ }),
-
-/***/ "./src/assets/images/pic04.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/pic04.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABBAAD/4QNvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OUVCMUVDNzZCMkJGRTQxMTgzMURBRTUwQTdBOTIwNzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTRDRTE4RjdDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTRDRTE4RjZDMTAyMTFFNDlGMUFGNDUwQUQxRjM4RjYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozOTczQTZBQTAxQzFFNDExQjU5RUI4ODkxRjczNTA2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5RUIxRUM3NkIyQkZFNDExODMxREFFNTBBN0E5MjA3MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6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"
-
-/***/ }),
-
-/***/ "./src/assets/scss/main.scss":
-/*!***********************************!*\
-  !*** ./src/assets/scss/main.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// empty (null-loader)
-
-/***/ }),
-
-/***/ "./src/components/Footer.js":
-/*!**********************************!*\
-  !*** ./src/components/Footer.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
 
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
 
-var Footer =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default()(Footer, _React$Component);
-
-  function Footer() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Footer.prototype;
-
-  _proto.render = function render() {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-      id: "footer"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "copyright"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, " As an Amazon Associate I earn from qualifying purchases."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, "Design: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "http://html5up.net"
-    }, "HTML5 UP"))));
-  };
-
-  return Footer;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./src/components/Header.js":
-/*!**********************************!*\
-  !*** ./src/components/Header.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-var Header =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default()(Header, _React$Component);
-
-  function Header() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Header.prototype;
-
-  _proto.render = function render() {
-    return (// <section id="header">
-      //     <div className="inner">
-      //         <span className="icon major fa-cloud"></span>
-      //         <h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-      //         little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-      //         <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-      //         lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-      //         <ul className="actions">
-      //             <li><a href="#one" className="button scrolly">Discover</a></li>
-      //         </ul>
-      //     </div>
-      // </section>
-      react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-        id: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "inner"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "icon major fa-cloud"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Want to charge your phone faster?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "actions"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#one",
-        className: "button scrolly"
-      }, "Discover how")))))
-    );
-  };
-
-  return Header;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./src/components/layout.js":
-/*!**********************************!*\
-  !*** ./src/components/layout.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_scss_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/scss/main.scss */ "./src/assets/scss/main.scss");
-/* harmony import */ var _assets_scss_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_scss_main_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./src/components/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
-
-
-
-
-
-
-var Template =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default()(Template, _React$Component);
-
-  function Template(props) {
-    var _this;
-
-    _this = _React$Component.call(this, props) || this;
-    _this.state = {
-      loading: 'is-loading'
-    };
-    return _this;
-  }
-
-  var _proto = Template.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    var _this2 = this;
-
-    this.timeoutId = setTimeout(function () {
-      _this2.setState({
-        loading: ''
-      });
-    }, 100);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  };
-
-  _proto.render = function render() {
-    var children = this.props.children;
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "body " + this.state.loading
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), children, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
-  };
-
-  return Template;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Template);
-
-/***/ }),
-
-/***/ "./src/pages/404.js":
-/*!**************************!*\
-  !*** ./src/pages/404.js ***!
-  \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-
-
-
-var NotFoundPage = function NotFoundPage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "NOT FOUND"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You just hit a route that doesn't exist... the sadness."));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (NotFoundPage);
-
-/***/ }),
-
-/***/ "./src/pages/index.js":
-/*!****************************!*\
-  !*** ./src/pages/index.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "react-helmet");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var _assets_images_pic01_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/images/pic01.jpg */ "./src/assets/images/pic01.jpg");
-/* harmony import */ var _assets_images_pic01_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_pic01_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_pic02_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/images/pic02.jpg */ "./src/assets/images/pic02.jpg");
-/* harmony import */ var _assets_images_pic02_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_pic02_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_pic03_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/images/pic03.jpg */ "./src/assets/images/pic03.jpg");
-/* harmony import */ var _assets_images_pic03_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_pic03_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_pic04_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/images/pic04.jpg */ "./src/assets/images/pic04.jpg");
-/* harmony import */ var _assets_images_pic04_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_pic04_jpg__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-
-
-
-
-var Homepage =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_0___default()(Homepage, _React$Component);
-
-  function Homepage() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Homepage.prototype;
-
-  _proto.render = function render() {
-    var siteTitle = "Gatsby Starter - Photon";
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      title: siteTitle
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-      id: "one",
-      className: "main style1"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "grid-wrapper"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-6"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-      className: "major"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Apple doesn't have what you need for fast charging out of the box")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "If you have an Iphone 8 or later, your phone is capable of an 18W power draw speed to charge it's battery - And the basic charger that came out of the box only maxes out delivery at 5W."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Thats a huge difference."))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-3"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-battery-empty fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-battery-quarter fa-2x"
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-3"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-battery-half fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-battery-full fa-2x"
-    })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-      id: "two",
-      className: "main style2"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "grid-wrapper"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-6"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "major-icons"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-bolt"
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-bolt"
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-bolt"
-    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-bolt"
-    })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-6",
-      align: "center"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-      className: "major"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-      bold: true
-    }, "What do you need to fast charge your phone? Two things!")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      class: "icon major fa-plug"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "a USB-C to Lightning cable"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-      class: "icon major fa-square"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "and a suitabe Power adapter")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-      id: "three",
-      className: "main style1 special"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "grid-wrapper"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-12"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-      className: "major"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("u", null, "Step 1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Cable")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "You will need a lightning cable with a Type C specification")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-apple fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Apple Lightning to USB-C Cable"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B07CMN7DCX",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-bell fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Belkin Boost Charge Cable"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B07P9ZDM5N",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-anchor fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Anker USB C to Lightning Cable"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B07H27J698",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-      id: "four",
-      className: "main style1 special"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "grid-wrapper"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-12"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-      className: "major"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("u", null, "Step 2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Power adapter")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "You will need a wall charger capable of at least an 18 watt power draw")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-apple fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Apple 18W USB-C Power Adapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B07L6TTC1T",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-anchor fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Anker 30W USB-C Power Adapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B06Y427WT7",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-4"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "icon style2 major fa-key fa-2x"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Aukey 27W USB-C Power Adapter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-      className: "actions"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://www.amazon.com/dp/B071H2JGJ6",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "button"
-    }, "Read More")))))));
-  };
-
-  return Homepage;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Homepage);
 
 /***/ }),
 
@@ -2280,50 +2520,6 @@ function (_React$Component) {
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
-
-/***/ }),
-
-/***/ "core-js/modules/es6.array.iterator":
-/*!*****************************************************!*\
-  !*** external "core-js/modules/es6.array.iterator" ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_iterator__;
-
-/***/ }),
-
-/***/ "core-js/modules/es6.array.sort":
-/*!*************************************************!*\
-  !*** external "core-js/modules/es6.array.sort" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_sort__;
-
-/***/ }),
-
-/***/ "core-js/modules/es6.function.name":
-/*!****************************************************!*\
-  !*** external "core-js/modules/es6.function.name" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_function_name__;
-
-/***/ }),
-
-/***/ "core-js/modules/es6.map":
-/*!******************************************!*\
-  !*** external "core-js/modules/es6.map" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_map__;
 
 /***/ }),
 
@@ -2382,39 +2578,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_to_string_
 
 /***/ }),
 
-/***/ "core-js/modules/es6.string.ends-with":
-/*!*******************************************************!*\
-  !*** external "core-js/modules/es6.string.ends-with" ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_ends_with__;
-
-/***/ }),
-
-/***/ "core-js/modules/es6.string.iterator":
-/*!******************************************************!*\
-  !*** external "core-js/modules/es6.string.iterator" ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_iterator__;
-
-/***/ }),
-
-/***/ "core-js/modules/web.dom.iterable":
-/*!***************************************************!*\
-  !*** external "core-js/modules/web.dom.iterable" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_web_dom_iterable__;
-
-/***/ }),
-
 /***/ "crypto":
 /*!*************************!*\
   !*** external "crypto" ***!
@@ -2445,6 +2608,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_lodash__;
+
+/***/ }),
+
+/***/ "minimatch":
+/*!****************************!*\
+  !*** external "minimatch" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_minimatch__;
 
 /***/ }),
 
